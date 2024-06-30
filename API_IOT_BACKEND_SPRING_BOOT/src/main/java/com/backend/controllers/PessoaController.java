@@ -26,7 +26,7 @@ public class PessoaController {
     @Operation(summary = "Cria uma nova pessoa")
     @ApiResponse(responseCode = "201", description = "Pessoa criada com sucesso")
     @CrossOrigin(origins = "http://localhost:80")
-    @PostMapping("/pessoa")
+    @PostMapping
     public ResponseEntity<Object> create(@RequestBody PessoaDTO dto) {
         try {
             var res = pessoaService.create(dto);

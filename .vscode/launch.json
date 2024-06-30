@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "backendApplication",
+            "request": "launch",
+            "mainClass": "com.backend.backendApplication",
+            "projectName": "backend-API_IOT_BACKEND_SPRING_BOOT"
+        },
+        {
+            "type": "java",
             "name": "BackendApplication",
             "request": "launch",
             "mainClass": "com.backend.BackendApplication",
