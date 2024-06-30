@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BackendApplication",
+            "request": "launch",
+            "mainClass": "com.backend.BackendApplication",
+            "projectName": "API_IOT_BACKEND_SPRING_BOOT"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-backendApplication<API_IOT_BACKEND_SPRING_BOOT>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.backend.backendApplication",
+            "projectName": "API_IOT_BACKEND_SPRING_BOOT",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "createDeviceRequest",
+  "description": "Teste de requisição ao endpoint /dispositivo para criar um novo dispositivo",
+  "type": "request",
+  "start": "2024-06-09T10:15:30.000Z",
+  "end": "2024-06-09T10:15:32.000Z",
+  "duration_ms": 2000,
+  "request": {
+    "method": "POST",
+    "url": "http://localhost:8080/dispositivo",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "nome": "Sensor de Umidade",
+      "descricao": "Sensor para medir a umidade do ar",
+      "enderecoIP": "192.168.0.102",
+      "localizacao": "Sala de servidores",
+      "gateway": {
+        "id": 2
+      }
+    }
+  },
+  "result": {
+    "status": "Errored",
+    "message": "Request 'createDeviceRequest' ERRORED in 2000 ms: Invalid URL: http://localhost:8080/dispositivo",
+    "details": {
+      "error_code": "INVALID_URL",
+      "suggestions": [
+        "Verifique se o servidor está em execução.",
+        "Assegure-se de que a URL está correta e acessível.",
+        "Cheque a configuração do endpoint na aplicação backend."
+      ]
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/* src/components/UsersList.css */
+.users-list-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.users-list-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.users-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-list-container th,
+.users-list-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.users-list-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.users-list-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.users-list-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-email {
+  color: #555;
+}
+
+
+/* src/components/UsersList.css */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    z-index: 1000; /* Z-index alto para aparecer sobre o conteúdo */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Z-index alto para cobrir todo o conteúdo */
+}
