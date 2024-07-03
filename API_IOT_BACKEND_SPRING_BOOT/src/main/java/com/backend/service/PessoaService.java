@@ -16,7 +16,12 @@ import com.backend.repository.PessoaRepository;
 public class PessoaService {
 
     @Autowired
-    private PessoaRepository pessoaRepository;
+    private final PessoaRepository pessoaRepository;
+
+
+    PessoaService(PessoaRepository pessoaRepository) {
+        this.pessoaRepository = pessoaRepository;
+    }
 
 
     public Pessoa create(PessoaDTO dto) {
