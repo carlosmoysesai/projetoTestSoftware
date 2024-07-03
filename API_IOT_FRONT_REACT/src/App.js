@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Client } from '@stomp/stompjs';
 import SockJS from 'sockjs-client';
 import './App.css';
+import HomePage from './components/Homepage/Homepage';
 
 function App() {
   const navigate = useNavigate();
@@ -60,6 +61,7 @@ function App() {
       <footer className="app-footer">
         <p className="app-footer-text">© 2024 React Application. All rights reserved.</p>
       </footer>
+      {/* <HomePage/> */}
     </div>
   );
 }
