@@ -1,5 +1,5 @@
 # Estagio 1 - builder
-FROM node:18.20.3-slim as builder
+FROM node:18.20.3-slim AS builder
 
 # Definir o diretório de trabalho dentro do container
 WORKDIR /app
