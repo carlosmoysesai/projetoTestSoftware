@@ -14,13 +14,13 @@ function UsersList() {
     }, []);
 
     const fetchUsers = () => {
-        axios.get('http://localhost/apispring/pessoa')
+        axios.get('http://localhost:8081/pessoa')
             .then(response => setPessoas(response.data))
             .catch(error => console.error('Erro ao buscar pessoas:', error));
     };
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost/apispring/pessoa/${id}`)
+        axios.delete(`http://localhost:8081/pessoa/${id}`)
             .then(() => {
                 fetchUsers(); // Atualiza a lista após a deleção
             })
@@ -37,7 +37,7 @@ function UsersList() {
     };
 
     const handleUpdate = () => {
-        axios.put(`http://localhost/apispring/pessoa/${editUser.id}`, editUser)
+        axios.put(`http://localhost:8081/pessoa/${editUser.id}`, editUser)
             .then(() => {
                 fetchUsers(); // Atualiza a lista após o update
                 closeModal(); // Fecha o modal após o update

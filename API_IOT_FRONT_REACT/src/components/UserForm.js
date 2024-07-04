@@ -23,7 +23,7 @@ function UserForm() {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost/apispring/pessoa', submitted);
+      const response = await axios.post('http://localhost:8081/pessoa', submitted);
       console.log('Usuário criado:', response.data);
       setCadastroSucesso(true); // Define cadastroSucesso como true após o sucesso
       // Limpar o formulário após o sucesso, se necessário
